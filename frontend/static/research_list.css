@@ -1,0 +1,77 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Light Theme */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --card-bg: #ffffff;
+    --button-bg: #4a90e2;
+    --button-hover: #3b7fc4;
+    --border-radius: 8px;
+}
+
+/* Body Styling */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 50px;
+}
+
+/* Page Title */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Research List */
+ul {
+    list-style: none;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Research Paper Card */
+li {
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+li h3 {
+    font-size: 1.5rem;
+    color: var(--button-bg);
+    margin-bottom: 5px;
+}
+
+li p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+/* Buttons / Links */
+a {
+    display: inline-block;
+    text-decoration: none;
+    background: var(--button-bg);
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    margin: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+a:hover {
+    background: var(--button-hover);
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='research_list.css') }}">
+</head>
+
+<h2>Your Research Papers</h2>
+<ul>
+    {% for paper in papers %}
+        <li>
+            <h3>{{ paper[0] }}</h3>
+            <p><strong>Author:</strong> {{ paper[1] }}</p>
+            <p><strong>Abstract:</strong> {{ paper[2] }}</p>
+        </li>
+    {% endfor %}
+</ul>
+
+<a href="{{ url_for('upload') }}">Upload New Paper</a>
+<a href="{{ url_for('logout') }}">Logout</a>

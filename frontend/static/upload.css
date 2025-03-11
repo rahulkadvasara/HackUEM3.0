@@ -1,0 +1,96 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Light Theme */
+:root {
+    --bg-color: #f4f4f9;
+    --text-color: #333;
+    --form-bg: #ffffff;
+    --button-bg: #4a90e2;
+    --button-hover: #3b7fc4;
+    --border-radius: 8px;
+}
+
+/* Body Styling */
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Page Title */
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Form Container */
+form {
+    background: var(--form-bg);
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Form Inputs */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+}
+
+/* Textarea Resizing */
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: var(--button-bg);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: var(--button-hover);
+}
+
+/* Logout Link */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    background: var(--button-bg);
+    color: white;
+    padding: 12px 24px;
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+a:hover {
+    background: var(--button-hover);
+}
